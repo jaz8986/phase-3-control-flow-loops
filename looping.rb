@@ -1,8 +1,16 @@
+require 'pry'
+
 def happy_new_year
-  # your code here
+  i = 10
+  while i > 0
+    puts i
+    i -= 1
+  end
+puts "Happy New Year!"
 end
 
-# No need to modify this code! Use this to implement the fizzbuzz_printer method.
+
+# # No need to modify this code! Use this to implement the fizzbuzz_printer method.
 def fizzbuzz(num)
   if num % 3 == 0 && num % 5 == 0
     "FizzBuzz"
@@ -20,5 +28,9 @@ def fizzbuzz_printer
 end
 
 def reverse_string(str)
-  # your code here
+  split_string = str.split("")
+  reversed = []
+  str.size.times { reversed << split_string.pop }
+  reversed.join
 end
+
